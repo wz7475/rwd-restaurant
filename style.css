@@ -6,5 +6,44 @@
 
 html, body{
     background-color: #404040;
-    color: #fff;
+    margin: 20px;
 }
+
+.container{
+    display: grid;
+    grid-gap: 20px;
+}
+
+.banner{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas: 
+    "picture picture price_item"
+    "picture picture price_item";
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.picture{
+    background-color:#464646;
+    background: url(img/taco.jpg);
+    min-height: 400px; 
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-attachment: fixed;
+    padding: 50px;
+    grid-area: picture;
+}
+
+.price_item{
+    grid-area: price_item;
+    background-color: blanchedalmond;
+    min-height: 80px;
+}
+
+/* @media only screen and (max-width: 700px){
+    .banner{
+        grid-template-areas: 
+        "picture"
+        "price_item price_item";
+    }
+} */
