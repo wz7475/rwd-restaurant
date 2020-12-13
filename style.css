@@ -20,7 +20,7 @@ html, body{
     grid-template-areas: 
     "picture picture price_item"
     "picture picture price_item";
-    grid-template-columns: 1fr 1fr 1fr;
+
 }
 
 .picture{
@@ -40,10 +40,13 @@ html, body{
     min-height: 80px;
 }
 
-/* @media only screen and (max-width: 700px){
-    .banner{
+@media only screen and (max-width: 700px){
+    /* .banner{
         grid-template-areas: 
         "picture"
         "price_item price_item";
+    } */
+    .price_item{
+        background-color: aquamarine;
     }
-} */
+}
