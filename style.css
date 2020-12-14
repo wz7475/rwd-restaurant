@@ -18,20 +18,42 @@ html, body{
     display: grid;
     grid-gap: 10px;
     grid-template-areas: 
-    "picture picture price_item"
-    "picture picture price_item";
-
+    "picture picture price_item1"
+    "picture picture price_item2";
 }
 
 .picture{
-    background-color:#464646;
+    background-color: aquamarine;
+    min-height: 100px;
+    grid-area: picture;
+    background-image: url(img/taco.jpg);
+}
+
+.price_item{
+    background-color: red;
+    min-height: 100px;
+}
+
+.price_item1{
+    grid-area: price_item1;
+}
+
+.price_item2{
+    grid-area: price_item2;
+}
+
+
+/*
+.picture{
+    /* background-color:#464646;
     background: url(img/taco.jpg);
     min-height: 400px; 
     background-repeat: no-repeat;
     background-position: bottom right;
     background-attachment: fixed;
-    padding: 50px;
+    padding: 50px; *//*
     grid-area: picture;
+    background-color: blanchedalmond;
 }
 
 .price_item{
@@ -39,14 +61,14 @@ html, body{
     background-color: blanchedalmond;
     min-height: 80px;
 }
-
-@media only screen and (max-width: 700px){
-    /* .banner{
+*/
+@media only screen and (max-width: 400px){
+    .banner{
         grid-template-areas: 
-        "picture"
-        "price_item price_item";
-    } */
-    .price_item{
+        "picture picture"
+        "price_item1 price_item2";
+    } 
+    /* .price_item{
         background-color: aquamarine;
-    }
+    } */
 }
