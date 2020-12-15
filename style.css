@@ -23,10 +23,11 @@ html, body{
 }
 
 .picture{
-    background-color: aquamarine;
     min-height: 400px;
     grid-area: picture;
     background-image: url(img/taco.jpg);
+    background-size: cover;
+    background-position: bottom right;
 }
 
 .price_item{
