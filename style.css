@@ -7,6 +7,8 @@
 html, body{
     background-color: #404040;
     margin: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
 }
 
 .container{
@@ -28,10 +30,13 @@ html, body{
     background-image: url(img/taco.jpg);
     background-size: cover;
     background-position: bottom right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .price_item{
-    background-color: red;
+    background-color: #fcc600;
     min-height: 150px;
 }
 
@@ -43,6 +48,21 @@ html, body{
     grid-area: price_item2;
 }
 
+.heading span, .subheading span{
+    background-color: #fcc600;
+    padding: 10px 5px;
+}
+
+.heading{
+    margin: 20px 40px;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.subheading{
+    margin: 20px 40px;
+    font-weight: 700;
+}
 
 /*
 .picture{
