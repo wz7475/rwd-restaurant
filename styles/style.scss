@@ -1,0 +1,20 @@
+@import "./banner";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    background-color: #404040;
+    margin: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+.container{
+    display: grid;
+    grid-gap: 20px;
+}
+

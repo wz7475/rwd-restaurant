@@ -1,0 +1,81 @@
+.banner{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas: 
+    "picture picture price_item1"
+    "picture picture price_item2";
+}
+
+.picture{
+    min-height: 400px;
+    grid-area: picture;
+    background-image: url(../img/taco.jpg);
+    background-size: cover;
+    background-position: bottom right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.price_item{
+    background-color: #fcc600;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.price_item .price{
+    font-size: 3rem;
+    font-weight: 300;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.price_item .name{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.price_item1{
+    grid-area: price_item1;
+}
+
+.price_item2{
+    grid-area: price_item2;
+}
+
+.heading span, .subheading span{
+    background-color: #fcc600;
+    padding: 10px 5px;
+}
+
+.heading{
+    margin: 20px 40px;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.subheading{
+    margin: 20px 40px;
+    font-weight: 700;
+}
+
+@media only screen and (max-width: 500px){
+    .banner{
+        grid-template-areas: 
+        "picture picture"
+        "price_item1 price_item1"
+        "price_item2 price_item2";
+    } 
+
+}
+
+@media only screen and (max-width: 700px) and (min-width: 501px) {
+    .banner{
+        grid-template-areas: 
+        "picture picture"
+        "price_item1 price_item2";
+        grid-template-columns: 1fr 1fr;
+    } 
+}
