@@ -18,7 +18,7 @@
 }
 
 .price_item{
-    background-color: #fcc600;
+    background-color: $yellow;
     min-height: 150px;
     display: flex;
     flex-direction: column;
@@ -46,7 +46,7 @@
 }
 
 .heading span, .subheading span{
-    background-color: #fcc600;
+    background-color: $yellow;
     padding: 10px 5px;
 }
 
