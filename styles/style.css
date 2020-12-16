@@ -1,3 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  background-color: #404040;
+  margin: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 20px;
+}
+
 .banner {
   display: -ms-grid;
   display: grid;
@@ -5,7 +25,7 @@
       grid-template-areas: "picture picture price_item1" "picture picture price_item2";
 }
 
-.picture {
+.banner .picture {
   min-height: 400px;
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
@@ -27,7 +47,23 @@
           justify-content: center;
 }
 
-.price_item {
+.banner .picture .heading {
+  margin: 20px 40px;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.banner .picture .subheading {
+  margin: 20px 40px;
+  font-weight: 700;
+}
+
+.banner .picture .heading span, .banner .picture .subheading span {
+  background-color: #fcc600;
+  padding: 10px 5px;
+}
+
+.banner .price_item {
   background-color: #fcc600;
   min-height: 150px;
   display: -webkit-box;
@@ -45,43 +81,27 @@
           align-items: center;
 }
 
-.price_item .price {
+.banner .price_item .price {
   font-size: 3rem;
   font-weight: 300;
   font-family: 'Quicksand', sans-serif;
 }
 
-.price_item .name {
+.banner .price_item .name {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
 }
 
-.price_item1 {
+.banner .price_item1 {
   -ms-grid-row: 1;
   -ms-grid-column: 3;
   grid-area: price_item1;
 }
 
-.price_item2 {
+.banner .price_item2 {
   -ms-grid-row: 2;
   -ms-grid-column: 3;
   grid-area: price_item2;
-}
-
-.heading span, .subheading span {
-  background-color: #fcc600;
-  padding: 10px 5px;
-}
-
-.heading {
-  margin: 20px 40px;
-  font-size: 1.5rem;
-  font-weight: 700;
-}
-
-.subheading {
-  margin: 20px 40px;
-  font-weight: 700;
 }
 
 @media only screen and (max-width: 500px) {
@@ -96,25 +116,5 @@
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
   }
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-html, body {
-  background-color: #404040;
-  margin: 20px;
-  font-family: 'Roboto', sans-serif;
-  font-size: 20px;
-}
-
-.container {
-  display: -ms-grid;
-  display: grid;
-  grid-gap: 20px;
 }
 /*# sourceMappingURL=style.css.map */
