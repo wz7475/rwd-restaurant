@@ -1,3 +1,0 @@
-set min height of picture bigger than 2x price_item
-
-take care of styling background photo

@@ -38,6 +38,22 @@ html, body{
 .price_item{
     background-color: #fcc600;
     min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.price_item .price{
+    font-size: 3rem;
+    font-weight: 300;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.price_item .name{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
 }
 
 .price_item1{
