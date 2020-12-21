@@ -127,8 +127,8 @@ html, body {
   display: -ms-grid;
   display: grid;
   grid-gap: 10px;
-  -ms-grid-columns: (1fr)[5];
-      grid-template-columns: repeat(5, 1fr);
+  -ms-grid-columns: (minmax(170px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
 }
 
 .menu div {
@@ -138,6 +138,7 @@ html, body {
   padding: 10px;
 }
 
+<<<<<<< HEAD
 @media only screen and (max-width: 900px) {
   .menu {
     -ms-grid-columns: (1fr)[3];
@@ -160,4 +161,11 @@ html, body {
         grid-template-columns: 1fr;
   }
 }
+=======
+/* @media only screen and (max-width: 1000px){
+    .menu{
+        display: none;
+    }
+} */
+>>>>>>> parent of 5c1af53 (menu tiles)
 /*# sourceMappingURL=style.css.map */
