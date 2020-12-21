@@ -4,6 +4,7 @@
     grid-template-areas: 
     "picture picture price_item1"
     "picture picture price_item2";
+    grid-template-columns: 1fr 1fr 1fr;
 
     .picture{
         min-height: 400px;
@@ -19,17 +20,19 @@
             margin: 20px 40px;
             font-size: 1.5rem;
             font-weight: 700;
+            background-color: $yellow;
         }
         
         .subheading{
             margin: 20px 40px;
             font-weight: 700;
+            background-color: $yellow;
         }
 
-        .heading span, .subheading span{
+        /* .heading span, .subheading span{
             background-color: $yellow;
             padding: 10px 5px;
-        }
+        } */
     }
 
     .price_item{
@@ -68,6 +71,7 @@
         "picture picture"
         "price_item1 price_item1"
         "price_item2 price_item2";
+        grid-template-columns: 1fr;
     } 
 
 }

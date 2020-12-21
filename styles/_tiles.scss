@@ -13,12 +13,14 @@
 @media only screen and (max-width: 900px){
     .menu{
         grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px 20px;
     }
 }
 
 @media only screen and (max-width: 700px){
     .menu{
         grid-template-columns: 1fr 1fr;
+        grid-gap: 10px 20px;
     }
 }
 
