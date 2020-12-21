@@ -47,23 +47,22 @@ html, body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  /* .heading span, .subheading span{
-            background-color: $yellow;
-            padding: 10px 5px;
-        } */
 }
 
 .banner .picture .heading {
   margin: 20px 40px;
   font-size: 1.5rem;
   font-weight: 700;
-  background-color: #fcc600;
 }
 
 .banner .picture .subheading {
   margin: 20px 40px;
   font-weight: 700;
+}
+
+.banner .picture .heading span, .banner .picture .subheading span {
   background-color: #fcc600;
+  padding: 10px 5px;
 }
 
 .banner .price_item {
@@ -115,6 +114,17 @@ html, body {
   }
 }
 
+@media only screen and (max-width: 400px) {
+  .banner .picture .heading span, .banner .picture .subheading span {
+    background-color: transparent;
+    padding: 0;
+  }
+  .banner .picture .heading, .banner .picture .subheading {
+    background-color: #fcc600;
+    padding: 5px;
+  }
+}
+
 @media only screen and (max-width: 700px) and (min-width: 501px) {
   .banner {
         grid-template-areas: "picture picture" "price_item1 price_item2";
@@ -138,34 +148,9 @@ html, body {
   padding: 10px;
 }
 
-<<<<<<< HEAD
-@media only screen and (max-width: 900px) {
-  .menu {
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px 20px;
-  }
-}
-
-@media only screen and (max-width: 700px) {
-  .menu {
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    grid-gap: 10px 20px;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  .menu {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-  }
-}
-=======
 /* @media only screen and (max-width: 1000px){
     .menu{
         display: none;
     }
 } */
->>>>>>> parent of 5c1af53 (menu tiles)
 /*# sourceMappingURL=style.css.map */

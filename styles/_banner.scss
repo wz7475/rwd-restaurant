@@ -20,19 +20,17 @@
             margin: 20px 40px;
             font-size: 1.5rem;
             font-weight: 700;
-            background-color: $yellow;
         }
         
         .subheading{
             margin: 20px 40px;
             font-weight: 700;
-            background-color: $yellow;
         }
 
-        /* .heading span, .subheading span{
+        .heading span, .subheading span{
             background-color: $yellow;
             padding: 10px 5px;
-        } */
+        }
     }
 
     .price_item{
@@ -72,8 +70,24 @@
         "price_item1 price_item1"
         "price_item2 price_item2";
         grid-template-columns: 1fr;
-    } 
+    }
+}
 
+@media only screen and (max-width:400px){
+    .banner{
+        .picture{
+            .heading span, .subheading span{
+                background-color: transparent;
+                padding: 0;
+            }
+    
+            .heading, .subheading{
+                background-color: $yellow;
+                padding: 5px;
+            }
+        }
+    }
+    
 }
 
 @media only screen and (max-width: 700px) and (min-width: 501px) {
