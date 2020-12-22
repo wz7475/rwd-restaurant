@@ -181,6 +181,35 @@ html, body {
   font-size: 1.2rem;
 }
 
+.main {
+  background-color: #fff;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 35px;
+  -ms-grid-columns: auto 1fr;
+      grid-template-columns: auto 1fr;
+}
+
+.main .photo img {
+  max-width: 100%;
+}
+
+.main p {
+  font-size: 1.2rem;
+  margin: 15px 0;
+}
+
+.main button {
+  background-color: #fcc600;
+  padding: 5px;
+  font-size: 1.4rem;
+  border: 1px solid #fcc600;
+  border-radius: 10px;
+}
+
 @media only screen and (max-width: 900px) {
   .menu {
     -ms-grid-columns: (1fr)[3];
@@ -199,12 +228,20 @@ html, body {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
   }
+  .main {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    justify-items: center;
+  }
 }
 
 @media only screen and (max-width: 500px) {
   .menu {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+  }
+  .menu div:nth-child(2n) {
+    background-color: #fff;
   }
   .offer {
     -ms-grid-columns: 1fr;

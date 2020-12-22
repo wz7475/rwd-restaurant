@@ -1,0 +1,3 @@
+import more weights of fonts
+
+put taco picture and info in one div and add margin to that div -> to align picture to info
