@@ -197,17 +197,22 @@ html, body {
   max-width: 100%;
 }
 
-.main p {
-  font-size: 1.2rem;
-  margin: 15px 0;
+.main .info p {
+  margin: 10px 0;
 }
 
 .main button {
   background-color: #fcc600;
   padding: 5px;
-  font-size: 1.4rem;
-  border: 1px solid #fcc600;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border: 5px solid #fcc600;
   border-radius: 10px;
+}
+
+.main button:hover {
+  background-color: #fff;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 900px) {

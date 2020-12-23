@@ -45,18 +45,25 @@
         max-width: 100%;
     }
 
-    p{
-        font-size: 1.2rem;
-        margin: 15px 0;
+    .info{
+        p{
+            margin: 10px 0;
+        }
     }
 
     button{
         background-color: $yellow;
         padding: 5px;
-        font-size: 1.4rem;
-        border: 1px solid $yellow;
+        font-size: 1.2rem;
+        font-weight: 700;
+        border: 5px solid $yellow;
         border-radius: 10px;
     }
+    button:hover{
+        background-color: #fff;
+        cursor: pointer;
+    }
+
 }
 
 @media only screen and (max-width: 900px){
