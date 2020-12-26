@@ -1,6 +1,6 @@
 const generate = () =>{
     let gallery1= "";
-    for (let i =1; i<=8; i++){
+    for (let i =1; i<=19; i++){
         let pic_name = i + ".jpg";
         if (i<10)
             pic_name = "0" + pic_name;

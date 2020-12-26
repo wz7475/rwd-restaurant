@@ -253,4 +253,20 @@ html, body {
         grid-template-columns: 1fr;
   }
 }
+
+#gallery1 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+#gallery1 .pic img {
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: opacity 0.25s ease-in-out;
+  transition: opacity 0.25s ease-in-out;
+}
 /*# sourceMappingURL=style.css.map */
