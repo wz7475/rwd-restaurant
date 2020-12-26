@@ -1,23 +1,20 @@
 #gallery1{
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
 
     .column{
-        flex: 25%;
-        max-width: 25%;
+        display: grid;
+        grid-gap: 10px;
 
         img{
             width: 100%;
-            vertical-align: middle;
         }
     }
 }
 
 @media only screen and (max-width: 800px){
     #gallery1{
-        .column{
-            flex: 50%;
-            max-width: 50%;
-        }
+        grid-template-columns: 1fr 1fr;
     }
 }
