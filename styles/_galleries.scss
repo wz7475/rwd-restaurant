@@ -1,13 +1,23 @@
 #gallery1{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
 
-    .pic{
+    .column{
+        flex: 25%;
+        max-width: 25%;
+
         img{
-            max-width: 100%;
-        height: auto;
-        object-fit: cover;
-        transition: opacity 0.25s ease-in-out;
+            width: 100%;
+            vertical-align: middle;
+        }
+    }
+}
+
+@media only screen and (max-width: 800px){
+    #gallery1{
+        .column{
+            flex: 50%;
+            max-width: 50%;
         }
     }
 }
