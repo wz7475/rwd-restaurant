@@ -13,10 +13,7 @@ counter = 1
 for i in os.listdir():
     if os.path.isfile(i):
         extension = os.path.splitext(i)[1]
-        if counter < 10:
-            new_name = "0" + str(counter) + extension
-        else:
-            new_name = str(counter) + extension
+        new_name = str(counter) + extension
         os.rename(i, os.path.join(path, new_name))
         counter += 1;
         
