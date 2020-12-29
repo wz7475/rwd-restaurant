@@ -2,13 +2,27 @@
 .grid {
     display: flex;
 
-    img
-    {width:100%}
+    img{
+		width:100%
+	}
+	
+	.grid-col {
+		flex-grow: 1;
+		padding: 0.4em;
+	}
+
+	.grid-item{
+		padding: 0.4em 0;
+	}
 }
 
-.grid-col {
-	flex-grow: 1;
+.gallery_header{
+	color: $yellow;
+	text-align: center;
+	font-size: 2rem;
 }
+
+
 
 
 
