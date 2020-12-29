@@ -2,8 +2,6 @@ const generate = () =>{
     let gallery1= "";
     for (let i =0; i<17; i++){
         let pic_name = `${i + 1}.jpg`;
-        if (i<10-1)
-            pic_name = "0" + pic_name;
         pic_name = "img/" + pic_name;
         if (((i - 1) % 4 == 0 || i == 0) && i != 1){
             gallery1 += '<div class="column">\n';
