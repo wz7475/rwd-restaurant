@@ -1,18 +1,19 @@
 const generate = () =>{
-    let gallery1= "";
-    for (let i =0; i<17; i++){
-        let pic_name = `${i + 1}.jpg`;
-        pic_name = "img/" + pic_name;
-        if (((i - 1) % 4 == 0 || i == 0) && i != 1){
-            gallery1 += '<div class="column">\n';
-        }
-        /* gallery1 += `<div class="pic"><img src="${pic_name}" alt="taco"></div>\n`; */ 
-        gallery1 += `<img src="${pic_name}" alt="taco">\n`;
-        if (i % 4 == 0 && i != 0){
-            gallery1 += '</div>\n';
-        }
+    const gallery2 = document.getElementById("gallery2");
+    for(let i=1; i<5; i++){
+        window["col" + i] = document.createElement("div");
+        window["col" + i].className = `grid-col grid-col--${i}`;
+        gallery2.appendChild(window["col" + i]);
     }
-    document.getElementById("gallery1").innerHTML = gallery1;
+
+    for(let i=1; i<18; i++){
+        window["item" + i] = document.createElement("div");
+        window["item" + i].className = `grid-item`;
+        window["img" + i] = document.createElement("img");
+        window["img" + i].src = `img/${i}.jpg`;
+        window["item" + i].appendChild(window["img" + i]);
+        gallery2.appendChild(window["item" + i]);
+    }
 }
 
 window.addEventListener("load", generate);
