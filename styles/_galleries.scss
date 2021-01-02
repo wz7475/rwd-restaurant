@@ -1,26 +1,20 @@
-/*with flexbox*/
-.grid {
-    display: flex;
-
-    img{
-		width:100%
-	}
-	
-	.grid-col {
-		flex-grow: 1;
-		padding: 0.4em;
-	}
-
-	.grid-item{
-		padding: 0.4em 0;
-	}
-}
-
-.gallery_header{
-	background-color: $yellow;
-	text-align: center;
-	font-size: 1.5rem;
-	padding: 1rem;
+#gallery1{
+    .grid {
+        display: flex;
+    
+        img{
+            width:100%
+        }
+        
+        .grid-col {
+            flex-grow: 1;
+            padding: 0.4em;
+        }
+    
+        .grid-item{
+            padding: 0.4em 0;
+        }
+    }
 }
 
 #gallery2{
@@ -38,14 +32,14 @@
     }
 }
 
-@media only screen and (max-width: 800px){
-    #gallery2{
-        grid-template-columns: 1fr 1fr;
-    }
+.gallery_header{
+	background-color: $yellow;
+	text-align: center;
+	font-size: 1.5rem;
+	padding: 1rem;
 }
 
-
-
+/* COLCADE.JS GALLERY #1 */
 /* 2 columns by default, hide columns 2 & 3 */
 .grid-col--2, .grid-col--3 { display: none }
 
@@ -62,4 +56,11 @@
 /* 1 column below 500px */
 @media ( max-width: 500px ){
 	.grid-col--4 { display: none; width: 100%;}
+}
+
+/* PURE CSS GRID GALLERY #2 */
+@media only screen and (max-width: 800px){
+    #gallery2{
+        grid-template-columns: 1fr 1fr;
+    }
 }
