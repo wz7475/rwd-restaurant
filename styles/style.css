@@ -283,6 +283,31 @@ html, body {
   padding: 1rem;
 }
 
+#gallery2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+#gallery2 .column {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 10px;
+}
+
+#gallery2 .column img {
+  width: 100%;
+}
+
+@media only screen and (max-width: 800px) {
+  #gallery2 {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
 /* 2 columns by default, hide columns 2 & 3 */
 .grid-col--2, .grid-col--3 {
   display: none;
