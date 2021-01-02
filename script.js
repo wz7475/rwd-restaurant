@@ -1,4 +1,4 @@
-const generate = () => {
+const generate_gallery2 = () => {
     const gallery2 = document.getElementById("gallery2");
     for (let i = 1; i < 5; i++) {
         window["col" + i] = document.createElement("div");
@@ -23,6 +23,18 @@ const generate = () => {
     }
 }
 
+const generate_gallery3 = () => {
+    const gallery3 = document.getElementById("gallery3");
 
+    for (let i = 1; i < 18; i++) {
+        window["item" + i] = document.createElement("div");
+        window["item" + i].className = "item";
+        window["img" + i] = document.createElement("img");
+        window["img" + i].src = `img/${i}.jpg`;
+        window["item" + i].appendChild(window["img" + i]);
+        gallery3.appendChild(window["item" + i]);
+    }
+}
 
-window.addEventListener("load", generate);
+window.addEventListener("load", generate_gallery2);
+window.addEventListener("load", generate_gallery3);
