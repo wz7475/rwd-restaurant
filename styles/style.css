@@ -280,13 +280,13 @@ html, body {
   display: grid;
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
-  grid-gap: 10px;
+  grid-gap: 1rem;
 }
 
 #gallery2 .column {
   display: -ms-grid;
   display: grid;
-  grid-gap: 10px;
+  grid-gap: 1rem;
 }
 
 #gallery2 .column img {
@@ -351,6 +351,13 @@ html, body {
   #gallery2 {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #gallery2 {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
   }
 }
 /*# sourceMappingURL=style.css.map */

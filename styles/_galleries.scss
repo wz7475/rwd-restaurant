@@ -20,11 +20,11 @@
 #gallery2{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 10px;
+    grid-gap: 1rem;
 
     .column{
         display: grid;
-        grid-gap: 10px;
+        grid-gap: 1rem;
 
         img{
             width: 100%;
@@ -76,5 +76,11 @@
 @media only screen and (max-width: 800px){
     #gallery2{
         grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    #gallery2{
+        grid-template-columns: 1fr;
     }
 }
