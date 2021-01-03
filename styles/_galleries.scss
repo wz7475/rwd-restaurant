@@ -1,4 +1,8 @@
-
+.gallery1{
+    img{
+        width: 100%;
+    }
+}
 
 #gallery2{
     display: grid;
@@ -36,8 +40,6 @@
 	padding: 1rem;
 }
 
-/* COLCADE.JS GALLERY #1 */
-/* 2 columns by default, hide columns 2 & 3 */
 .grid-col--2, .grid-col--3, .grid-col--1 { display: none }
 
 @media only screen and (min-width: 450px){

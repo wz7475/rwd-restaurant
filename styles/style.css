@@ -254,6 +254,10 @@ html, body {
   }
 }
 
+.gallery1 img {
+  width: 100%;
+}
+
 #gallery2 {
   display: -ms-grid;
   display: grid;
@@ -295,8 +299,6 @@ html, body {
   padding: 1rem;
 }
 
-/* COLCADE.JS GALLERY #1 */
-/* 2 columns by default, hide columns 2 & 3 */
 .grid-col--2, .grid-col--3, .grid-col--1 {
   display: none;
 }
