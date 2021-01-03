@@ -34,7 +34,25 @@
 	padding: 1rem;
 }
 
-.grid-col--2, .grid-col--3, .grid-col--1 { display: none }
+#gallery3{
+    nav{
+        background-color: #fff;
+    }
+    p{
+        text-align: center;
+        padding: 1rem
+    }
+
+    .menu{
+        display: flex;
+        justify-content: center;
+
+        .option{
+            color:#fff;
+            background-color: #333333;
+        }
+    }
+}
 
 @media only screen and (min-width: 450px){
     #gallery1{

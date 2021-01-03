@@ -295,8 +295,27 @@ html, body {
   padding: 1rem;
 }
 
-.grid-col--2, .grid-col--3, .grid-col--1 {
-  display: none;
+#gallery3 nav {
+  background-color: #fff;
+}
+
+#gallery3 p {
+  text-align: center;
+  padding: 1rem;
+}
+
+#gallery3 .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#gallery3 .menu .option {
+  color: #fff;
+  background-color: #333333;
 }
 
 @media only screen and (min-width: 450px) {
