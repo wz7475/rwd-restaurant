@@ -254,11 +254,7 @@ html, body {
   }
 }
 
-.gallery1 img {
-  width: 100%;
-}
-
-#gallery2 {
+#gallery1 {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
@@ -266,13 +262,13 @@ html, body {
   grid-gap: 1rem;
 }
 
-#gallery2 .column {
+#gallery1 .column {
   display: -ms-grid;
   display: grid;
   grid-gap: 1rem;
 }
 
-#gallery2 .column img {
+#gallery1 .column img {
   width: 100%;
 }
 
@@ -304,7 +300,7 @@ html, body {
 }
 
 @media only screen and (min-width: 450px) {
-  #gallery2 {
+  #gallery1 {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
   }
@@ -315,7 +311,7 @@ html, body {
 }
 
 @media only screen and (min-width: 768px) {
-  #gallery2 {
+  #gallery1 {
     -ms-grid-columns: 1fr 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr 1fr;
   }

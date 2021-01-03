@@ -1,9 +1,9 @@
-const generate_gallery2 = () => {
-    const gallery2 = document.getElementById("gallery2");
+const generate_gallery1 = () => {
+    const gallery1 = document.getElementById("gallery1");
     for (let i = 1; i < 5; i++) {
         window["col" + i] = document.createElement("div");
         window["col" + i].className = "column";
-        gallery2.appendChild(window["col" + i]);
+        gallery1.appendChild(window["col" + i]);
     }
 
     for (let i = 1; i < 18; i++) {
@@ -36,5 +36,5 @@ const generate_gallery3 = () => {
     }
 }
 
-window.addEventListener("load", generate_gallery2);
+window.addEventListener("load", generate_gallery1);
 window.addEventListener("load", generate_gallery3);

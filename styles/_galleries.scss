@@ -1,10 +1,4 @@
-.gallery1{
-    img{
-        width: 100%;
-    }
-}
-
-#gallery2{
+#gallery1{
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 1rem;
@@ -43,7 +37,7 @@
 .grid-col--2, .grid-col--3, .grid-col--1 { display: none }
 
 @media only screen and (min-width: 450px){
-    #gallery2{
+    #gallery1{
         grid-template-columns: 1fr 1fr;
     }
     #gallery3{
@@ -52,7 +46,7 @@
 }
 
 @media only screen and (min-width: 768px){
-    #gallery2{
+    #gallery1{
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
     #gallery3{
