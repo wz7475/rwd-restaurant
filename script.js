@@ -23,8 +23,8 @@ const generate_gallery1 = () => {
     }
 }
 
-const generate_gallery3 = () => {
-    const gallery3 = document.getElementById("gallery3");
+const generate_gallery2 = () => {
+    const gallery2 = document.getElementById("gallery2");
 
     for (let i = 1; i < 18; i++) {
         window["item" + i] = document.createElement("div");
@@ -32,9 +32,9 @@ const generate_gallery3 = () => {
         window["img" + i] = document.createElement("img");
         window["img" + i].src = `img/${i}.jpg`;
         window["item" + i].appendChild(window["img" + i]);
-        gallery3.appendChild(window["item" + i]);
+        gallery2.appendChild(window["item" + i]);
     }
 }
 
 window.addEventListener("load", generate_gallery1);
-window.addEventListener("load", generate_gallery3);
+window.addEventListener("load", generate_gallery2);
