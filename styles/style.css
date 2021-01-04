@@ -313,9 +313,21 @@ html, body {
           justify-content: center;
 }
 
-#gallery3 .menu .option {
+#gallery3 .menu div {
   color: #fff;
+}
+
+#gallery3 .menu .option {
   background-color: #333333;
+}
+
+#gallery3 .menu .chosen {
+  background-color: #000;
+}
+
+#gallery3 .menu .onhover {
+  background-color: #646161a8;
+  cursor: pointer;
 }
 
 @media only screen and (min-width: 450px) {

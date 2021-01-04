@@ -47,9 +47,21 @@
         display: flex;
         justify-content: center;
 
-        .option{
+        div{
             color:#fff;
+        }
+
+        .option{
             background-color: #333333;
+        }
+
+        .chosen{
+            background-color: #000;
+        }
+
+        .onhover{
+            background-color: #646161a8;
+            cursor: pointer;
         }
     }
 }

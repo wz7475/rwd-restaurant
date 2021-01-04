@@ -36,5 +36,17 @@ const generate_gallery2 = () => {
     }
 }
 
+const change_class = (obj) =>{
+    //deactivate previous one
+    document.querySelector(".chosen").classList.remove("chosen");
+    obj.classList.add("chosen");
+}
+ 
+const onhover = (obj) =>{
+    if (!(obj.classList.contains("chosen"))){
+        obj.classList.add("onhover");
+    }
+}
+
 window.addEventListener("load", generate_gallery1);
 window.addEventListener("load", generate_gallery2);
