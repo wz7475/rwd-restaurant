@@ -36,17 +36,29 @@ const generate_gallery2 = () => {
     }
 }
 
-const change_class = (obj) =>{
+const change_class = (obj) => {
     //deactivate previous one
     document.querySelector(".chosen").classList.remove("chosen");
     obj.classList.add("chosen");
+    obj.classList.remove("onhover");
 }
- 
-const onhover = (obj) =>{
-    if (!(obj.classList.contains("chosen"))){
+
+const mouseover = (obj) => {
+    if (!(obj.classList.contains("chosen"))) {
         obj.classList.add("onhover");
     }
 }
 
-window.addEventListener("load", generate_gallery1);
-window.addEventListener("load", generate_gallery2);
+const mouseout = (obj) =>{
+    obj.classList.remove("onhover");
+}
+
+//window.addEventListener("load", generate_gallery1);
+//window.addEventListener("load", generate_gallery2);
+
+const menu = document.querySelectorAll(".option");
+for (let i = 0; i < menu.length; i++) {
+    menu[i].addEventListener("click", function() { change_class(this); });
+    menu[i].addEventListener("mouseover", function() { mouseover(this); });
+    menu[i].addEventListener("mouseout", function() { mouseout(this); });
+}
