@@ -13,7 +13,7 @@
     }
 }
 
-#gallery2{
+#gallery2, #gallery3 .gallery{
     column-count: 1;
     column-gap: 1rem;
     
@@ -37,10 +37,12 @@
 #gallery3{
     nav{
         background-color: #fff;
+        margin-bottom: 1rem;
+        padding: 1rem;
     }
     p{
         text-align: center;
-        padding: 1rem
+        padding: 0 1rem 1rem 1rem
     }
 
     .menu{
@@ -63,6 +65,11 @@
             background-color: #646161a8;
             cursor: pointer;
         }
+    }
+
+    // overwrite deafult
+    .gallery{
+        column-count: 3;
     }
 }
 
